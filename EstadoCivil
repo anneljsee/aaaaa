@@ -1,0 +1,26 @@
+package classes;
+public class imigrante_estadocivil {
+	
+	public class Pessoa {
+	    private String nome;
+	    private EstadoCivil estadoCivil;
+
+	    public Pessoa(String nome, EstadoCivil estadoCivil) {
+	        this.nome = nome;
+	        this.estadoCivil = estadoCivil;
+	    }
+
+	    public void exibirInfo() {
+	        System.out.println("Nome: " + nome);
+	        System.out.println("Estado Civil: " + estadoCivil);
+	    }
+
+	    public static void main(String[] args) {
+	        Pessoa p1 = new Pessoa("Lucas", EstadoCivil.SOLTEIRO);
+	        Pessoa p2 = new Pessoa("Ana", EstadoCivil.CASADO);
+
+	        p1.exibirInfo();
+	        p2.exibirInfo();
+	    }
+	}
+}
